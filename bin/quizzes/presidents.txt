@@ -1,0 +1,8 @@
+{"question"=>"# of George Washington?", "answer"=>"1"}
+{"question"=>"# of Thomas Jefferson?", "answer"=>"2"}
+{"question"=>"# of John Adams?", "answer"=>"3"}
+{"question"=>"# of James Monroe?", "answer"=>"4"}
+{"question"=>"# of James Madison?", "answer"=>"5"}
+{"question"=>"# of William Henry Harrison?", "answer"=>"6"}
+{"question"=>"# of Andrew Jackson?", "answer"=>"7"}
+{"question"=>"# of John Quincy Adams?", "answer"=>"8"}
