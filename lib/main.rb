@@ -37,10 +37,11 @@ class Quiz
       add_question
       write_all_questions_to_file
     end
-    
+
   end
 
   def get_questions_from_file
+    @questions.clear
     file = File.open(@filepath)
     data = file.readlines.map do |line|
       @questions.push(JSON.parse(line.gsub('=>',':')))
@@ -64,7 +65,9 @@ class Quiz
   end
 
   def test_loop
-    q_index = 0
+    q_index = 0.0
+    correct = 0.0
+    @questions = @questions.sample(@questions.length)
     while q_index < @questions.length
       cur_ques = @questions[q_index]
       puts "#{cur_ques['question']}"
@@ -73,10 +76,15 @@ class Quiz
         puts "WRONG! Correct answer: #{cur_ques['answer']}"
       else
         puts "Correct!"
+        correct += 1
       end
       q_index += 1
+      puts ""
     end
-
+    puts "End of Quiz!"
+    percent = (correct / q_index) * 100.0
+    puts "You scored #{percent}%"
+    puts ""
   end
 
   def create_new_quiz
@@ -86,11 +94,9 @@ class Quiz
     else
       File.new(@filepath, 'w')
       puts "Quiz created at #{@filepath}!"
-      puts " "
     end
+    puts " "
   end
-
-
 
   def menu_loop
     loop do
@@ -98,6 +104,7 @@ class Quiz
     puts "1. Create New Quiz"
     puts "2. Edit Existing Quiz"
     puts "3. Start Quiz!"
+    puts "4. Exit"
     input = gets.strip
 
     case input
@@ -108,6 +115,8 @@ class Quiz
       edit_loop
     when "3"
       start_quiz
+    when "4"
+      exit
     end
   end
 

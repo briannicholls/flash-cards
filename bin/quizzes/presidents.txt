@@ -1,8 +1,45 @@
 {"question"=>"# of George Washington?", "answer"=>"1"}
-{"question"=>"# of Thomas Jefferson?", "answer"=>"2"}
-{"question"=>"# of John Adams?", "answer"=>"3"}
-{"question"=>"# of James Monroe?", "answer"=>"4"}
-{"question"=>"# of James Madison?", "answer"=>"5"}
-{"question"=>"# of William Henry Harrison?", "answer"=>"6"}
+{"question"=>"# of Thomas Jefferson?", "answer"=>"3"}
+{"question"=>"# of John Adams?", "answer"=>"2"}
+{"question"=>"# of James Monroe?", "answer"=>"5"}
+{"question"=>"# of James Madison?", "answer"=>"4"}
+{"question"=>"# of William Henry Harrison?", "answer"=>"9"}
 {"question"=>"# of Andrew Jackson?", "answer"=>"7"}
-{"question"=>"# of John Quincy Adams?", "answer"=>"8"}
+{"question"=>"# of John Quincy Adams?", "answer"=>"6"}
+{"question"=>"# of Bill Clinton?", "answer"=>"42"}
+{"question"=>"# of Martin Van Buren", "answer"=>"8"}
+{"question"=>"# of John Tyler", "answer"=>"10"}
+{"question"=>"# of James K. Polk?", "answer"=>"11"}
+{"question"=>"# of Zachary Taylor?", "answer"=>"12"}
+{"question"=>"# of Millard Fillmore?", "answer"=>"13"}
+{"question"=>"# of Franklin Pierce?", "answer"=>"14"}
+{"question"=>"# of James Buchanan?", "answer"=>"15"}
+{"question"=>"# of Abraham Lincoln?", "answer"=>"16"}
+{"question"=>"# of Andrew Johnson?", "answer"=>"17"}
+{"question"=>"# of Ulysses S. Grant?", "answer"=>"18"}
+{"question"=>"# of Rutherford B. Hayes?", "answer"=>"19"}
+{"question"=>"# of James A. Garfield?", "answer"=>"20"}
+{"question"=>"# of Chester A. Arthur?", "answer"=>"21"}
+{"question"=>"# of Grover Cleveland?", "answer"=>"22"}
+{"question"=>"# of Benjamin Harrison?", "answer"=>"23"}
+{"question"=>"# of Grover Cleveland? (Second term)", "answer"=>"24"}
+{"question"=>"# of William McKinley?", "answer"=>"25"}
+{"question"=>"# of Theodore Roosevelt?", "answer"=>"26"}
+{"question"=>"# of William H. Taft?", "answer"=>"27"}
+{"question"=>"# of Woodrow Wilson?", "answer"=>"28"}
+{"question"=>"# of Warren Harding?", "answer"=>"29"}
+{"question"=>"# of Calvin Coolidge?", "answer"=>"30"}
+{"question"=>"# of Herbert Hoover?", "answer"=>"31"}
+{"question"=>"# of Franklin Delano Roosevelt?", "answer"=>"32"}
+{"question"=>"# of Harry S. Truman?", "answer"=>"33"}
+{"question"=>"# of Dwight D. Eisenhower?", "answer"=>"34"}
+{"question"=>"# of John F. Kennedy?", "answer"=>"35"}
+{"question"=>"# of Lyndon B. Johnson?", "answer"=>"36"}
+{"question"=>"# of Richard Nixon?", "answer"=>"37"}
+{"question"=>"# of Gerald Ford?", "answer"=>"38"}
+{"question"=>"# of Jimmy Carter?", "answer"=>"39"}
+{"question"=>"# of Ronald Reagan?", "answer"=>"40"}
+{"question"=>"# of George H. W. Bush?", "answer"=>"41"}
+{"question"=>"# of George W. Bush?", "answer"=>"43"}
+{"question"=>"# of Barack Obama?", "answer"=>"44"}
+{"question"=>"# of Donald Trump?", "answer"=>"45"}
