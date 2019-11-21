@@ -7,32 +7,34 @@ class Quiz
     @quiz
     @title
     @questions = [] # AoH
-    @filepath = "./bin/quizzes/sample_file.txt"
+    @filepath = ""
 
-    #get_questions_from_file
-    #write_all_questions_to_file
-    #puts @questions
     menu_loop
   end
 
-  def set_path
-    puts "Enter quiz name:"
-    input = gets.strip
+  def set_path(input = gets.strip)
     @filepath = "./bin/quizzes/#{input}.txt"
+  end
+
+  def load_quiz
+
   end
 
   def add_question
     puts "What is the question?"
     q = gets.strip
+    puts ""
     puts "What is the answer?"
     a = gets.strip
     @questions.push({'question' => q, 'answer' => a})
+    puts ""
+    puts ""
   end
 
   def edit_loop
-    set_path
-    get_questions_from_file
-
+    puts ""
+    puts "Begin adding questions. Type 'exit' to return to main menu."
+    puts ""
     loop do
       add_question
       write_all_questions_to_file
@@ -59,8 +61,6 @@ class Quiz
   end
 
   def start_quiz
-    set_path
-    get_questions_from_file
     test_loop
   end
 
@@ -111,9 +111,10 @@ class Quiz
     when "1"
       create_new_quiz
     when "2"
-
+      display_quizzes
       edit_loop
     when "3"
+      display_quizzes
       start_quiz
     when "4"
       exit
@@ -121,4 +122,20 @@ class Quiz
   end
 
   end
+
+  def display_quizzes
+    puts ""
+    puts "*** Select a quiz! ***"
+    path = "./bin/quizzes"
+    quiz_names = Dir.entries(path)
+    quiz_names = quiz_names[2..(quiz_names.length - 1)].map{|name| name.gsub(".txt","")}
+    quiz_names.each_with_index{|name,index| puts "#{index + 1} : #{name}" }
+    puts ""
+    puts "Enter number 1 - #{quiz_names.length}"
+    input_to_index = gets.strip.to_i - 1
+    file_name = quiz_names[input_to_index]
+    set_path(file_name)
+    get_questions_from_file
+  end
+
 end
