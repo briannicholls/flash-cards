@@ -1,6 +1,4 @@
 require 'json'
-require 'pry'
-
 
 class Quiz
   def initialize
